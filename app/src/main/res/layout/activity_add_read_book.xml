@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    tools:context=".AddReadBook">
+
+    <EditText
+        android:id="@+id/input_Title"
+        android:layout_width="228dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="128dp"
+        android:autofillHints="Book Title"
+        android:ems="10"
+        android:hint="Book Title"
+        android:inputType="text"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/input_Author"
+        android:layout_width="228dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="12dp"
+        android:autofillHints="Book Author"
+        android:ems="10"
+        android:hint="@string/book_author"
+        android:inputType="text"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_Title"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/input_ISBN"
+        android:layout_width="228dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="12dp"
+        android:autofillHints="ISBN"
+        android:ems="10"
+        android:hint="@string/isbn"
+        android:inputType="text"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/genreSpinner"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/addReadBook"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:background="#4287f5"
+        android:text="@string/add_book2"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/statusSpinner" />
+
+    <Spinner
+        android:id="@+id/genreSpinner"
+        android:layout_width="228dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="12dp"
+        android:autofillHints="Book Genre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_Author" />
+
+    <Spinner
+        android:id="@+id/statusSpinner"
+        android:layout_width="228dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="12dp"
+        android:autofillHints="Book Status"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_ISBN" />
+
+    <TextView
+        android:id="@+id/addTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/add_book_to_collection"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

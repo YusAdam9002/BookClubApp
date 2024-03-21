@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    tools:context=".AddReadBook">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:background="@drawable/plain_background_no_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/updateTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="136dp"
+            android:layout_marginEnd="137dp"
+            android:layout_marginBottom="83dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Update Book"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/input_Title2"
+        android:layout_width="228dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="208dp"
+        android:ems="10"
+        android:hint="Book Title"
+        android:inputType="text"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="Autofill,HardcodedText,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/input_Author2"
+        android:layout_width="228dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Book Author"
+        android:inputType="text"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_Title2"
+        tools:ignore="Autofill,HardcodedText,TouchTargetSizeCheck" />
+
+    <Spinner
+        android:id="@+id/genreSpinner2"
+        android:layout_width="228dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="12dp"
+        android:autofillHints="Book Genre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_Author2" />
+
+    <EditText
+        android:id="@+id/input_ISBN2"
+        android:layout_width="228dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="ISBN"
+        android:inputType="text"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/genreSpinner2"
+        tools:ignore="Autofill,HardcodedText,TouchTargetSizeCheck" />
+
+    <Spinner
+        android:id="@+id/statusSpinner2"
+        android:layout_width="228dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="12dp"
+        android:autofillHints="Book Status"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_ISBN2" />
+
+    <Button
+        android:id="@+id/updateReadBook"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="#4287f5"
+        android:text="@string/update_book"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/statusSpinner2" />
+
+    <Button
+        android:id="@+id/deleteBook"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:text="Delete book"
+        android:textColor="@color/red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updateReadBook"
+        app:layout_constraintVertical_bias="0.309"
+        tools:ignore="HardcodedText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">BookClubApp-Java</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="select">Select Genre</string>
+    <string name="please_enter_username">Please enter username</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="add_a_book_you_have_read_to_your_collection">Add a book you have read to your collection!</string>
+    <string name="read_books">Read Books</string>
+    <string name="add_a_book_you_are_currently_reading">Add a book you are currently reading!</string>
+    <string name="update_book">Update Book</string>
+    <string name="bestreads">BestReads</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="retype_password">Retype Password</string>
+    <string name="register">Register</string>
+    <string name="already_registered_login_here">Already registered? Login here!</string>
+    <string name="change_profile_picture">Change Profile Picture</string>
+    <string name="todo">TODO</string>
+    <string name="little_fella">Little Fella</string>
+    <string name="add_book_button">Add Book button</string>
+    <string name="add_book">add_book</string>
+    <string name="book_author">Book Author</string>
+    <string name="isbn">ISBN</string>
+    <string name="add_book2">Add Book</string>
+    <string name="add_book_to_collection">Add book to collection</string>
+    <string name="profile">Profile</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="log_out">Log Out</string>
+    <string name="ToDo">TODO</string>
+    <string name="send">SEND</string>
+    <string name="reading">Reading</string>
+    <string-array name="genre">
+        <item>Fiction</item>
+        <item>Thriller</item>
+        <item>Fantasy</item>
+        <item>Science Fiction</item>
+        <item>Short Story</item>
+        <item>Education</item>
+        <item>Biography</item>
+        <item>Young Adult</item>
+    </string-array>
+
+    <string-array name="status">
+        <item>Read</item>
+        <item>Reading</item>
+        <item>Want to read</item>
+    </string-array>
+</resources>

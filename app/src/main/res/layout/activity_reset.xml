@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/resetConfirm"
+            android:layout_width="217dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="96dp"
+            android:layout_marginEnd="96dp"
+            android:background="#4287f5"
+            android:text="Confirm"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/repassword_Reset"
+            app:layout_constraintVertical_bias="0.216"
+            tools:ignore="HardcodedText" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_Reset"
+            android:layout_width="240dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="328dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/repassword_Reset"
+            android:layout_width="240dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:hint="Retype Password"
+            android:inputType="textPassword"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password_Reset"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/userName_Reset_Text"
+            android:layout_width="201dp"
+            android:layout_height="41dp"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/password_Reset"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.449" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="278dp"
+        android:background="@drawable/plain_background_no_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </RelativeLayout>
+
+</RelativeLayout>
